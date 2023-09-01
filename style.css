@@ -84,14 +84,17 @@ html, body{
 
 /*? Hero Footer */
 .hero-footer{
+    width: 96%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2% 2%;
+    /* Hero Footer Will Always be at the bottom  */
+    position: absolute;
+    bottom: 0;
 
 }
 .hero-footer a{
-    width: 100%;
     color:white;
     text-decoration: none;
     font-size: 1.2vw;
