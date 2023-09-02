@@ -7,9 +7,14 @@
     font-family: 'General Sans', sans-serif;
 }
 
+:root{
+    --font-color-grey: #A3A3A3;
+}
+
 html, body{
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 
 .main{
@@ -48,7 +53,7 @@ html, body{
 
 .heading h1{
     line-height: 0.9;
-    color: #A3A3A3;
+    color: var(--font-color-grey);
     font-size: 10vw;
     font-weight:500;
     margin-left: 42px;
@@ -100,9 +105,6 @@ html, body{
     font-size: 1.2vw;
     font-weight: 500;
 }
-.hero-footer a:hover{
-    text-decoration: underline;
-}
 
 .circleIcons{
     display: flex;
@@ -119,3 +121,162 @@ html, body{
 }
 
 /*! Second Page CSS  */
+.secondPage{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 0 10% 0 3%;
+    margin: 12% 0;
+}
+
+.element{
+    position: relative;
+    width: 100%;
+    height:28%;
+    border-top: 1px solid var(--font-color-grey);
+    border-bottom: 1px solid var(--font-color-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element img{
+    position: absolute;
+    z-index: 999;
+    height: 110%;
+    width: 30%;
+    display: none; /* Hiding The images */
+}
+
+.element h1{
+    color: var(--font-color-grey);
+    font-size: 7vw;
+    font-weight: 500;
+}
+
+.element h5{
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+
+/*! Third Page CSS */
+.thirdPage{
+    width: 100%;
+    height: 80vh;
+    padding-right: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8%;
+}
+
+/* Image */
+.thirdPage img{
+    width: 16vw;
+    height: 16vw;
+}
+
+/* About Text */
+.thirdPage .textAbout{
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.thirdPage .textAbout h5{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--font-color-grey);
+}
+
+.thirdPage .textAbout p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.thirdPage .textAbout a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1.5% 0;
+    width: 110px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1vw;
+}
+
+.thirdPage .textAbout a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Subscribe */
+.subscribe{
+    height: 20%;
+    color: white;
+    margin: 3%;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.subscribe h5{
+    width: 28%;
+    color: var(--font-color-grey);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.subscribe a{
+    width: 28%;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+/*! Footer */
+.footer{
+    width: 100%;
+    height: 8vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.footer .footer-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vw;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.footer .footer-right{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.footer .footer-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
