@@ -64,13 +64,13 @@ html, body{
 }
 
 /* Extra div for slide effect on loading */
-.bounding{
+/* .bounding{
     width: fit-content;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .bounding .boundingElem{
     transform: translateY(100%);
-}
+} */
 
 .heading h1{
     line-height: 0.9;
@@ -88,10 +88,8 @@ html, body{
 }
 .blockText h1{
     margin-left: 14vw;
-    background-color: red;
 }
 .heading .blockText .bounding h5{
-    background-color: red;
     line-height: 3;
     text-align: right;
     font-size: 1.1vw;
