@@ -17,6 +17,17 @@ html, body{
     background-color: black;
 }
 
+.miniCircle{
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 999999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    display: none;
+}
+
 .main{
     width: 100%;
     height: auto;
@@ -24,6 +35,7 @@ html, body{
 
 /*! First Page / Hero Section CSS  */
 .hero{
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: black;
@@ -51,6 +63,15 @@ html, body{
     margin-top: 85px;
 }
 
+/* Extra div for slide effect on loading */
+.bounding{
+    width: fit-content;
+    /* overflow: hidden; */
+}
+.bounding .boundingElem{
+    transform: translateY(100%);
+}
+
 .heading h1{
     line-height: 0.9;
     color: var(--font-color-grey);
@@ -61,11 +82,16 @@ html, body{
 
 .blockText{
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .blockText h1{
     margin-left: 14vw;
+    background-color: red;
 }
-.blockText h5{
+.heading .blockText .bounding h5{
+    background-color: red;
     line-height: 3;
     text-align: right;
     font-size: 1.1vw;

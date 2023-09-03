@@ -1,13 +1,27 @@
 //* Script - Modern Website 1 
+//* Animations..... 
 
-// Getting Elements
-const HoverElement = document.querySelector('.element');
-const hoverImg = document.querySelectorAll('.hover-img');
+//! Functions... 
+//? Smooth Scroll
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+}); 
 
-const ShowImagesWhenHover = () =>{
-    HoverElement.addEventListener('mouseover', () => {
-        hoverImg.style.display = 'block';
+//? Circle on Mouse Cursor
+const circleMouseFollow = () => {
+    window.addEventListener('mousemove',(details) =>{
+        // console.log(details.clientX, details.clientY);
+        document.querySelector('#miniCircle').style.transform = `translate(${details.clientX}px, ${details.clientY}px)`
+        document.querySelector('#miniCircle').style.display = 'block';
     })
-}
+} 
 
-// ShowImagesWhenHover();
+//? First Page Animations using GSAP
+// const firstPageAnimation = () => {
+    
+// } 
+
+
+//! Function Calls 
+circleMouseFollow();

@@ -5,13 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Website 1</title>
+    <title>Cynthiaugwu Clone</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,400,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="smoothScroll.css">
 </head>
 
 <body>
+    <div id="miniCircle" class="miniCircle"></div>
+
     <div class="main" id="main">
         <!--! First Page / Hero Section / Landing Page -->
         <div class="hero">
@@ -23,16 +26,26 @@
 
             <!--?Hero Mid Heading -->
             <div class="heading">
-                <h1>PRODUCT</h1>
+                <div class="bounding">
+                    <h1 class="boundingElem">PRODUCT</h1>
+                </div>
                 <div class="blockText">
-                    <h1>DESIGNER</h1>
-                    <h5>BASED IN TORONTO</h5>
+                    <div class="bounding">
+                        <h1 class="boundingElem">DESIGNER</h1>
+                    </div>
+                    <div class="bounding">
+                        <h5 class="boundingElem">BASED IN TORONTO</h5>
+                    </div>
                 </div>
             </div>
             <!--?Hero Sub-heading -->
             <div class="sub-heading">
-                <h5>AVAILABLE FOR FREELANCE</h5>
-                <h5>WORK FROM MAY 23'</h5>
+                <div class="bounding">
+                    <h5 class="boundingElem">AVAILABLE FOR FREELANCE</h5>
+                </div>
+                <div class="bounding">
+                    <h5 class="boundingElem">WORK FROM MAY 23'</h5>
+                </div>
             </div>
 
             <!--? Hero Footer  -->
@@ -104,7 +117,9 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
