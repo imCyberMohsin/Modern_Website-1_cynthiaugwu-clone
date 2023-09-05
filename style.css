@@ -64,13 +64,13 @@ html, body{
 }
 
 /* Extra div for slide effect on loading */
-/* .bounding{
+.bounding{
     width: fit-content;
     overflow: hidden;
 }
 .bounding .boundingElem{
     transform: translateY(100%);
-} */
+}
 
 .heading h1{
     line-height: 0.9;
