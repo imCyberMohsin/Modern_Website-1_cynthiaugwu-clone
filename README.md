@@ -1,3 +1,9 @@
+# Fix Bugs
+1. MiniCircle
+2. Text when img hover is switched
+...
+
+
 # Smooth Scroll Tutorial
 
 1. Visit https://github.com/locomotivemtl/locomotive-scroll
