@@ -307,3 +307,92 @@ html, body{
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+@media screen and (max-width: 480px) {
+    
+    .thirdPage {
+        height: auto; /* Allow content to expand */
+        padding: 5%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* Add space between elements */
+    }
+
+    .top {
+        flex-direction: column; /* Stack image and text */
+        align-items: center;
+        text-align: center;
+        gap: 20px; /* Space between image and text */
+    }
+
+    .thirdPage img {
+        width: 80%; /* Make image responsive */
+        max-width: 300px;
+        height: auto;
+    }
+
+    .thirdPage .textAbout {
+        width: 90%; /* Increase width for better layout */
+        text-align: justify;
+    }
+
+    .textAbout h5 {
+        font-size: 1rem;
+    }
+
+    .textAbout p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .textAbout a {
+        width: 120px;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Subscribe Section */
+    .subscribe {
+        width: 90%; /* Make it more responsive */
+        margin: auto;
+        text-align: center;
+        padding: 20px 0;
+        height: auto; /* Allow content to expand naturally */
+    }
+
+    .subscribe h5 {
+        width: 100%; /* Take full width */
+        font-size: 1rem;
+    }
+
+    .subscribe a {
+        width: 100%; /* Full width for mobile */
+        font-size: 1rem;
+        padding: 8px 0;
+        display: inline-block; /* Ensure proper button-like appearance */
+    }
+
+    /* Footer Section */
+    .footer {
+        flex-direction: column; /* Stack elements */
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+        height: auto; /* Adjust height */
+    }
+
+    .footer .footer-left,
+    .footer .footer-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer .footer-right a {
+        font-size: 1rem;
+    }
+}
